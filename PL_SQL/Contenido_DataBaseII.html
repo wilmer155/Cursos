@@ -264,6 +264,23 @@
             color: #4f85e4;
             font-weight: bold;
         }
+		.boton-descarga {
+			display: inline-block;
+			padding: 12px 24px;
+			background-color: #60a5fa; /* blue-500 */
+			color: white;
+			text-decoration: none;
+			border-radius: 8px; /* Bordes más redondeados */
+			border: none;
+			cursor: pointer;
+			transition: background-color 0.3s ease, box-shadow 0.3s ease;
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Efecto de resalte */
+		}
+
+		.boton-descarga:hover {
+			background-color: #f97316; /* orange-500 */
+			box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Sombra un poco más grande al pasar el cursor */
+		}
     </style>
 </head>
 <body class="bg-gray-100 text-gray-800">
@@ -806,6 +823,9 @@ Para la primera entrega, debes presentar:
 * Un documento con el **diseño detallado de tu base de datos**.
 * Los **scripts DDL** para crear las tablas, secuencias e índices.
 * Una **demostración** de algunos componentes básicos de PL/SQL que interactúen con tus tablas.
+<a href="URL_DEL_ARCHIVO_A_DESCARGAR" download="nombre_para_el_archivo.pdf" class="boton-descarga">
+  Descargar documento
+</a>
 `
                         }
                     ]
