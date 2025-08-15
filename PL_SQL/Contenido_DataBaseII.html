@@ -281,6 +281,27 @@
 			background-color: #f97316; /* orange-500 */
 			box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Sombra un poco más grande al pasar el cursor */
 		}
+
+        .whatsapp-button {
+            position: fixed;
+            bottom: 100px;
+            right: 25px;
+            z-index: 1000;
+        }
+        .whatsapp-button a {
+            display: inline-block;
+            background-color: #25d366;
+            color: #fff;
+            padding: 15px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 16px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        .whatsapp-button a:hover {
+            transform: scale(1.05);
+        }
     </style>
 </head>
 <body class="bg-gray-100 text-gray-800">
@@ -346,6 +367,18 @@
                 </button>
             </div>
         </div>
+    </div>
+
+    <div class="chatbot-container">
+        <script src="https://cdn.botpress.cloud/webchat/v3.2/inject.js" defer></script>
+        <script src="https://files.bpcontent.cloud/2025/08/15/01/20250815011305-AYOL74QI.js" defer></script>
+    </div>
+
+    <!-- Grupo de Whapsapp -->
+    <div class="whatsapp-button">
+        <a href="https://chat.whatsapp.com/Hio8Fe0LE8d6x7JH6U4ECU" target="_blank">
+            WS
+        </a>
     </div>
 
     <script>
@@ -431,6 +464,10 @@ END;
 \`\`\`
 ¡Hola, Mundo desde PL/SQL!
 \`\`\`
+
+<a href="https://wilmer155.github.io/Cursos/PL_SQL/Material_Apoyo_Clases_PLSQL.rar" download="Material_Apoyo_Clases_PLSQL.rar" class="boton-descarga">
+  Descargar Material Apoyo
+</a>
 `
                         }
                     ]
@@ -824,7 +861,7 @@ Para la primera entrega, debes presentar:
 * Los **scripts DDL** para crear las tablas, secuencias e índices.
 * Una **demostración** de algunos componentes básicos de PL/SQL que interactúen con tus tablas.
 <a href="https://wilmer155.github.io/Cursos/PL_SQL/Proyecto%20Gestion%20Banco%20PLSQL.pdf" download="Proyecto_Gestion_Banco_PLSQL.pdf" class="boton-descarga">
-  Descargar documento
+  Descargar Proyecto
 </a>
 `
                         }
@@ -1862,6 +1899,7 @@ Esta es una oportunidad para recibir retroalimentación valiosa que te ayudará 
             renderWeeks('all');
             renderChart();
         });
+
     </script>
 </body>
 </html>
