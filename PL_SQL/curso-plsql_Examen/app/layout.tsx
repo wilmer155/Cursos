@@ -2,6 +2,7 @@ import type React from "react"
 import type { Metadata } from "next"
 import { GeistSans } from "geist/font/sans"
 import { GeistMono } from "geist/font/mono"
+import Script from "next/script"
 import "./globals.css"
 
 export const metadata: Metadata = {
@@ -38,14 +39,13 @@ html {
           </a>
         </div>
 		
-		    <div className="chatbot-container">
+		  <div className="chatbot-container">
           <Script src="https://cdn.botpress.cloud/webchat/v3.2/inject.js" strategy="afterInteractive" />
           <Script
             src="https://files.bpcontent.cloud/2025/08/15/01/20250815011305-AYOL74QI.js"
             strategy="afterInteractive"
           />
-        </div>
-		
+        </div>		
       </body>
     </html>
   )
