@@ -39,9 +39,12 @@ html {
           </a>
         </div>
 
-        <div class="chatbot-container">
-          <script src="https://cdn.botpress.cloud/webchat/v3.2/inject.js" defer></script>
-          <script src="https://files.bpcontent.cloud/2025/08/15/01/20250815011305-AYOL74QI.js" defer></script>
+        <div className="chatbot-container">
+          <Script src="https://cdn.botpress.cloud/webchat/v3.2/inject.js" strategy="afterInteractive" />
+          <Script
+            src="https://files.bpcontent.cloud/2025/08/15/01/20250815011305-AYOL74QI.js"
+            strategy="afterInteractive"
+          />
         </div>
 
       </body>
