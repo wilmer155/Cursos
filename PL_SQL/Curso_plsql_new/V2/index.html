@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curso PL/SQL y Administración Oracle — Nivel Universitario</title>
+  <meta
+    name="description"
+    content="Curso completo de PL/SQL y Administración Oracle para estudiantes universitarios. 16 semanas de contenido teórico y práctico."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- NAV -->
+  <nav class="site-nav">
+    <div class="container">
+      <div class="brand"><span class="dot"></span> curso.plsql_dba</div>
+      <div class="nav-links">
+        <a href="#programa">Programa</a>
+        <a href="#semanas">Contenido semanal</a>
+        <a href="#bibliografia">Bibliografía</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="eyebrow">// Base de datos Oracle · PL/SQL</p>
+        <h1>Domina <span>PL/SQL</span> y la administración de Oracle</h1>
+        <p class="lede">
+          16 semanas de fundamentos, administración avanzada y un proyecto final
+          para llevar una base de datos completa desde el diseño hasta la
+          producción.
+        </p>
+        <div class="hero-actions">
+          <a href="#semanas" class="btn btn-primary">Ver contenido semanal</a>
+          <a href="#programa" class="btn btn-ghost">Ver programa</a>
+        </div>
+      </div>
+
+      <div class="terminal" aria-hidden="false">
+        <div class="terminal-bar">
+          <span></span><span></span><span></span>
+          <span class="title">sqlplus — curso</span>
+        </div>
+        <div class="terminal-body">
+          <div class="terminal-line"><span class="prompt">SQL&gt;</span> <span id="typed-query"></span><span class="cursor-blink" id="cursor"></span></div>
+          <table class="result-table" id="result-table">
+            <tbody>
+              <tr><td>NOMBRE</td><td>PL/SQL y Administración Oracle</td></tr>
+              <tr><td>NIVEL</td><td>Universitario</td></tr>
+              <tr><td>DURACION</td><td>16 semanas</td></tr>
+              <tr><td>MODALIDAD</td><td>Presencial / Virtual</td></tr>
+              <tr><td>MODULOS</td><td>3 + evaluación</td></tr>
+            </tbody>
+          </table>
+          <p class="result-meta" id="result-meta"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container stats">
+      <div class="stat-card">
+        <div class="num">16</div>
+        <div class="label">Semanas de curso</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">3</div>
+        <div class="label">Módulos + evaluación</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">4</div>
+        <div class="label">Entregables del proyecto final</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- PROGRAMA / TIMELINE -->
+  <section class="section" id="programa">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Programa</p>
+          <h2>Los módulos no van en bloques separados</h2>
+          <p>
+            El proyecto final y la evaluación se intercalan entre las semanas
+            de teoría, tal como ocurre en el cronograma real del curso. Pasa el
+            cursor u oprime cada semana para ver su módulo.
+          </p>
+        </div>
+        <div class="timeline-legend" id="timeline-legend"></div>
+      </div>
+
+      <div class="timeline-wrap">
+        <div class="timeline" id="timeline"></div>
+      </div>
+      <p class="timeline-note">↳ desplázate horizontalmente en pantallas pequeñas</p>
+    </div>
+  </section>
+
+  <!-- CONTENIDO SEMANAL -->
+  <section class="section" id="semanas">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Contenido semanal</p>
+          <h2>Explora, filtra y marca tu avance</h2>
+          <p>Tu progreso se guarda en este navegador, no requiere cuenta ni servidor.</p>
+        </div>
+        <div class="progress-wrap">
+          <span id="progress-label">0 / 16 semanas</span>
+          <div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div>
+        </div>
+      </div>
+
+      <div class="controls">
+        <div class="filter-group" id="filter-group"></div>
+        <div class="search-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="7"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" id="search-input" placeholder="Buscar por tema (ej. triggers)" />
+        </div>
+      </div>
+
+      <div class="modules-groups" id="modules-groups"></div>
+    </div>
+  </section>
+
+  <!-- BIBLIOGRAFIA -->
+  <section class="section" id="bibliografia">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Recursos</p>
+          <h2>Bibliografía recomendada</h2>
+        </div>
+      </div>
+      <div class="biblio-grid" id="biblio-grid"></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contacto">
+    <div class="container footer-inner">
+      <p>© 2025 Curso de PL/SQL y Administración Oracle · Nivel Universitario</p>
+      <a class="wa-link" id="wa-link" href="#" target="_blank" rel="noopener noreferrer">
+        💬 Unirse al grupo de WhatsApp del curso
+      </a>
+    </div>
+  </footer>
+
+  <!-- MODAL: Visor de diapositivas de la semana -->
+  <div class="modal-overlay" id="slide-modal" hidden>
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="slide-modal-title">
+      <div class="modal-head">
+        <div>
+          <p class="eyebrow" id="slide-modal-eyebrow"></p>
+          <h3 id="slide-modal-title"></h3>
+        </div>
+        <button class="modal-close" id="slide-modal-close" aria-label="Cerrar">✕</button>
+      </div>
+      <div class="modal-body" id="slide-modal-body"></div>
+      <div class="modal-foot">
+        <button class="btn btn-ghost" id="slide-prev">← Anterior</button>
+        <span class="slide-counter" id="slide-counter"></span>
+        <button class="btn btn-ghost" id="slide-next">Siguiente →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: Examen Final -->
+  <div class="modal-overlay" id="exam-modal" hidden>
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="exam-modal-title">
+      <div class="modal-head">
+        <div>
+          <p class="eyebrow">Semana 11 · Evaluación</p>
+          <h3 id="exam-modal-title">Examen Final PL/SQL</h3>
+        </div>
+        <button class="modal-close" id="exam-modal-close" aria-label="Cerrar">✕</button>
+      </div>
+      <div class="modal-body" id="exam-modal-body"></div>
+      <div class="modal-foot" id="exam-modal-foot"></div>
+    </div>
+  </div>
+
+  <!--
+    El ORDEN de estos scripts es un contrato, no una preferencia (ver AGENTS.md §2):
+    los archivos de datos primero porque solo declaran globals; script.js antes de
+    exam.js porque exam.js consume renderMarkdown, escapeHtml y SLIDE_TYPE_LABEL.
+    No agregar defer ni async: script.js toca el DOM en su top-level.
+  -->
+  <script src="data.js"></script>
+  <script src="weeks-content.js"></script>
+  <script src="sql-datasets.js"></script>
+  <script src="exercises.js"></script>
+  <script src="script.js"></script>
+  <script src="exam.js"></script>
+</body>
+</html>
