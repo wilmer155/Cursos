@@ -1240,3 +1240,24 @@ pre.md-code code {
     width: 100%;
   }
 }
+
+.whatsapp-button {
+            position: fixed;
+            bottom: 100px;
+            right: 25px;
+            z-index: 1000;
+}
+.whatsapp-button a {
+	display: inline-block;
+	background-color: #25d366;
+	color: #fff;
+	padding: 15px 20px;
+	border-radius: 50px;
+	text-decoration: none;
+	font-size: 16px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	transition: transform 0.3s ease;
+}
+.whatsapp-button a:hover {
+	transform: scale(1.05);
+}
